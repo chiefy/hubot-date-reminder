@@ -1,7 +1,7 @@
 {
   "name": "hubot-date-reminder",
   "description": "A hubot script to remind you of special dates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Christopher 'Chief' Najewicz <chief@beefdisicple.com>",
   "license": "MIT",
   "keywords": "hubot, hubot-scripts, dates, reminders",
@@ -13,7 +13,6 @@
     "url": "https://github.com/hubot-scripts/hubot-date-reminder/issues"
   },
   "dependencies": {
-    "hubot-redis-brain": "0.0.3",
     "lodash": "^4.13.1",
     "moment": "^2.13.0"
   },
