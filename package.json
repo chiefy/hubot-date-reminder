@@ -1,0 +1,41 @@
+{
+  "name": "hubot-date-reminder",
+  "description": "A hubot script to remind you of special dates",
+  "version": "1.0.0",
+  "author": "Christopher 'Chief' Najewicz <chief@beefdisicple.com>",
+  "license": "MIT",
+  "keywords": "hubot, hubot-scripts, dates, reminders",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-date-reminder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-date-reminder/issues"
+  },
+  "dependencies": {
+    "hubot-redis-brain": "0.0.3",
+    "lodash": "^4.13.1",
+    "moment": "^2.13.0"
+  },
+  "peerDependencies": {
+    "hubot": "2.x"
+  },
+  "devDependencies": {
+    "hubot-test-helper": "^1.3.0",
+    "chai": "^2.1.1",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-mocha-test": "~0.12.7",
+    "grunt-release": "~0.11.0",
+    "hubot": "2.x",
+    "matchdep": "~0.3.0",
+    "mocha": "^2.1.0",
+    "sinon": "^1.13.0",
+    "sinon-chai": "^2.7.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  }
+}
