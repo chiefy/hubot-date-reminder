@@ -37,14 +37,26 @@ describe('date-reminder', function() {
 
   });
 
+  describe('informs how long until a specified event', function () {
+    var date_str = '06-16-2016';
+    var event_name = 'Jack\'s Birthday';
+    var jack_says = ['jack', '@hubot how long until ' + event_name];
+    it('responds to "how long until"', function (done) {
+      room.user.say.apply(room.user, jack_says)
+        .then(function() {
+          expect(room.messages).to.exist;
+          done();
+        });
+    });
+
+  });
+
   describe('lists any previously saved events', function () {
 
     it('responds to query for date list', function (done) {
       var jack_says = ['jack', '@hubot list dates'];
       room.user.say.apply(room.user, jack_says)
         .then(function() {
-
-          console.dir(room.messages);
           done();
         })
     });

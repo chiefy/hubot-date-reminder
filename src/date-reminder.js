@@ -88,7 +88,7 @@ module.exports = function HubotDateReminder(robot) {
       return res.reply('Sorry, I could not find the event "' + the_event + '"');
     }
 
-    res.reply(the_event + 'is ' + found.date.toNow());
+    res.reply(the_event + ' is ' + found.date.from());
 
   });
 
